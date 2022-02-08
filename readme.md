@@ -1,4 +1,7 @@
 useage:
 
-python calc.py <inv/div> K X Y
+c = circumfrence
+a = area
+
+python calc.py <c/a> r
 
