@@ -1,27 +1,28 @@
 from sys import argv
-constant = argv[2]
-x = argv[3]
-y = argv[4]
+import math
 
-if argv[1] == "inv":
-    if y == "y":
-        eq = float(constant) / float(x)
+p = argv[5]
+a = argv[2]
+b = argv[3]
+c = argv[4]
+
+if argv[1] == "ar":
+    c = float(c)
+    a = float(a)
+    b = float(b)
+
+    eq = a*b*(math.radians(c)/2)
+    print(eq)
+if argv[1] == "pr":
+    if b == "b":
+        eq = float(p) - float(a) - float(c)
         print(eq)
-    if constant == "k":
-        eq = float(y) * float(x)
+    if c == "c":
+        eq = float(p) - float(a) - float(b)
         print(eq)
-    if x == "x":
-        eq = float(y) * float(constant)
+    if a == "a":
+        eq = float(p) - float(b) - float(c)
         print(eq)
-if argv[1] == "dir": 
-    if y == "y":
-        eq = float(constant) * float(x)
+    if p == "p":
+        eq = float(a)+float(b)+float(c)
         print(eq)
-    if constant == "k":
-        eq = float(y) / float(x)
-        print(eq)
-    if x == "x":
-        eq = float(y) / float(constant)
-        print(eq)
-else:
-    print("invalid operation, use either inv or dir, use -h for help")
