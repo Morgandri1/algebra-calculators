@@ -1,4 +1,4 @@
 useage:
 
-python calc.py <inv/div> <K> <X> <Y>
+python calc.py <inv/div> K X Y
 
